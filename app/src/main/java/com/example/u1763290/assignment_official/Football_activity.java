@@ -42,10 +42,10 @@ public class Football_activity extends AppCompatActivity implements NavigationVi
     @Override
         public boolean onNavigationItemSelected (@NonNull MenuItem item){
             switch (item.getItemId()) {
-                case R.id.nav_maps:
+               /* case R.id.nav_maps:
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                            new MapsFragment()).commit();
-                    break;
+                            new MapsActivity()).commit();
+                    break;*/
                 case R.id.nav_rules:
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             new RulesFragment()).commit();
@@ -54,9 +54,14 @@ public class Football_activity extends AppCompatActivity implements NavigationVi
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             new DonateFragment()).commit();
                     break;
+                case R.id.nav_maps_rea:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                            new MapsActivity6()).commit();
+                    break;
                 case R.id.nav_send:
                     Toast.makeText(this, "Sent", Toast.LENGTH_SHORT).show();
                     break;
+
             }
             drawer.closeDrawer(GravityCompat.START);
             return true;

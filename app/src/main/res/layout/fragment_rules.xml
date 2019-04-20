@@ -3,29 +3,206 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimaryDark"
+    android:backgroundTint="@color/common_google_signin_btn_text_dark_default">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="14dp"
-        android:text="What are the Rules?"
-        android:textColor="@android:color/background_light"
-        android:textSize="28sp"
-        android:textStyle="bold" />
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="90dp"
-        android:layout_height="70dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="36dp"
-        app:srcCompat="@drawable/rules_sign" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView10"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textView10"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:includeFontPadding="false"
+                android:text="Rules and Regulations"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="1. The minimum age for partcipants is 22 years old"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="342dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView10"
+                android:layout_alignStart="@+id/textView10"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="19dp"
+                android:text="2. Each team will consist of 5 players and 1 sub"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9"
+                android:layout_below="@+id/textView9"
+                android:layout_marginTop="19dp"
+                android:text="3. Games will be 15 minutes long and final will be 20 minutes long"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView11"
+                android:layout_alignStart="@+id/textView11"
+                android:layout_below="@+id/textView11"
+                android:layout_marginTop="23dp"
+                android:text="4. Goals can't be scored within the box"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView12"
+                android:layout_alignStart="@+id/textView12"
+                android:layout_below="@+id/textView12"
+                android:layout_marginTop="19dp"
+                android:text="5. 1 sub may be used per game"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView13"
+                android:layout_alignStart="@+id/textView13"
+                android:layout_below="@+id/textView13"
+                android:layout_marginTop="16dp"
+                android:text="6. No backpasses to goalkeeper"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_alignStart="@+id/textView14"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="21dp"
+                android:text="7. Handball is another goal to team"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_alignStart="@+id/textView14"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="21dp"
+                android:text="8. No studs allowed"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_alignStart="@+id/textView14"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="21dp"
+                android:text="9. Handball is another goal to team"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_alignStart="@+id/textView14"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="21dp"
+                android:text="10. No offsides"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_alignStart="@+id/textView14"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="21dp"
+                android:text="11. Goalkeeper can switch positions"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_alignStart="@+id/textView14"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="21dp"
+                android:text="12. Goalkeeper cannot leave box"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_alignStart="@+id/textView14"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="21dp"
+                android:text="13. Backpasses will result in penalty"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_alignStart="@+id/textView14"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="21dp"
+                android:text="14. Penalties can only be taken with one step"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_alignStart="@+id/textView14"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="21dp"
+                android:text="15. Yellow and Red cards will be used"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

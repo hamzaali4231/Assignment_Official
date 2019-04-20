@@ -4,4 +4,10 @@
     <string name="welcome_to_the_app">Welcome to the App</string>
     <string name="navigation_drawer_open">Open Navigation drawer </string>
     <string name="navigation_drawer_close">Close Navigation drawer </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_maps3">Map</string>
+    <string name="title_activity_maps4">Map</string>
+    <string name="title_activity_maps5">Map</string>
+    <string name="title_activity_maps6">Map</string>
 </resources>
