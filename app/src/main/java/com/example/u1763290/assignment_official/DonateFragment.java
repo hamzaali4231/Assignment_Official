@@ -21,9 +21,6 @@ import static com.example.u1763290.assignment_official.R.id.cardno;
 import com.braintreepayments.cardform.view.CardForm;
 */
 
-/**
- * Created by u1763290 on 12/04/2019.
- */
 
 public class DonateFragment extends Fragment {
     EditText cardno;
@@ -32,31 +29,27 @@ public class DonateFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_donate,container,false);
-        EditText cardcheck1 =(EditText) rootView.findViewById(R.id.cardno);
+        final View rootView = inflater.inflate(R.layout.fragment_donate,container,false);
+        final EditText cardcheck1 =(EditText) rootView.findViewById(R.id.cardno);
         Button buy = (Button) rootView.findViewById(R.id.buy);
 
 
-        String cardcehcker= cardcheck1.getText().toString();
-
-        if (TextUtils.isEmpty(cardcehcker)){
-            cardcheck1.setError("Please enter number");
-            buy.setEnabled(false);
-        }
-        else {
-            buy.setEnabled(true);
             buy.setOnClickListener(new View.OnClickListener() {
-
                 @Override
                 public void onClick(View view) {
-                    Intent in = new Intent(getActivity(), Donation_thankyou_activity.class);
-                    startActivity(in);
+                    String cardcehcker = cardcheck1.getText().toString();
+                    if (TextUtils.isEmpty(cardcehcker)) {
+                        cardcheck1.setError("Please enter number");
+                        {
+                            Intent in = new Intent(getActivity(), Donation_thankyou_activity.class);
+                            startActivity(in);
+
+                        }
+                    }
 
                 }
-            });
 
-            return rootView;
-        }
+            });
         return rootView;
     }
 }

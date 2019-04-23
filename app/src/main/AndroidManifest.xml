@@ -53,7 +53,7 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name="com.example.u1763290.Assignment_Official.MapsActivity6"
+            android:name="com.example.u1763290.assignment_official.MapsActivity6"
             android:label="@string/title_activity_maps6" />
         <activity android:name=".Donation_thankyou_activity"></activity>
     </application>

@@ -1,5 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Event Info"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView34"
+            android:layout_alignStart="@+id/textView34"
+            android:layout_below="@+id/textView34"
+            android:fontFamily="@font/open_sans"
+            android:text="See maps tab for more details"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView37"
+            android:layout_alignStart="@+id/textView37"
+            android:layout_below="@+id/textView37"
+            android:fontFamily="@font/open_sans"
+            android:text="It will cost £5 per player with all profits going to charity"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView34"
+            android:layout_alignStart="@+id/textView34"
+            android:layout_below="@+id/textView34"
+            android:layout_marginTop="31dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Price?"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView24"
+            android:layout_alignStart="@+id/textView24"
+            android:layout_below="@+id/textView24"
+            android:fontFamily="@font/open_sans"
+            android:text="knockout like competition. A win results in a team going through, while a loss will mean a team is out of the tournament. If there is a draw the game will be decided in a penalty shootout"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView23"
+            android:layout_alignStart="@+id/textView23"
+            android:layout_below="@+id/textView23"
+            android:fontFamily="@font/open_sans"
+            android:text="There will be a total of 20 teams, competing in a "
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="What is happening in the event?"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView22"
+            android:layout_alignStart="@+id/textView22"
+            android:layout_below="@+id/textView22"
+            android:fontFamily="@font/open_sans"
+            android:text="A charity indoor 5 a side football match."
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView29"
+            android:layout_alignStart="@+id/textView29"
+            android:layout_below="@+id/textView29"
+            android:fontFamily="@font/open_sans"
+            android:text="It will happen at Frame 2 Feather Rd, Bradford BD3 9DJ"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView32"
+            android:layout_alignStart="@+id/textView32"
+            android:layout_below="@+id/textView32"
+            android:fontFamily="@font/open_sans"
+            android:text="It will happen on the 23.07.2019"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView35"
+            android:layout_alignStart="@+id/textView35"
+            android:layout_below="@+id/textView35"
+            android:layout_marginTop="11dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Where will it happen?"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView31"
+            android:layout_alignStart="@+id/textView31"
+            android:layout_below="@+id/textView31"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="When will it happen?"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView30"
+            android:layout_alignStart="@+id/textView30"
+            android:layout_below="@+id/textView30"
+            android:fontFamily="@font/open_sans"
+            android:text="See Maps tab for more location details"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView33"
+            android:layout_alignStart="@+id/textView33"
+            android:layout_below="@+id/textView33"
+            android:fontFamily="@font/open_sans"
+            android:text="From 12pm - 7pm"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView33"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textView33"
+            android:layout_marginBottom="13dp"
+            android:ems="10"
+            android:inputType="text|date" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/timer"
+            android:layout_toEndOf="@+id/textView31"
+            android:layout_toRightOf="@+id/textView31"
+            android:text="Button" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
