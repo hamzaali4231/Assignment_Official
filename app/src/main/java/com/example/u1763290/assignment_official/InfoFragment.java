@@ -29,12 +29,6 @@ public class InfoFragment extends Fragment {
         View rootview = inflater.inflate(R.layout.fragment_info, container, false);
         timer= (TextView) rootview.findViewById(R.id.timer);
         btn3= (Button) rootview.findViewById(R.id.btn3);
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                countDownTimer.start();
-            }
-        });
         return rootview;
     }
 

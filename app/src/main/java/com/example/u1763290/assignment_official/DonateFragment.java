@@ -15,7 +15,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import static com.example.u1763290.assignment_official.R.id.cardno;
 
 /*
 import com.braintreepayments.cardform.view.CardForm;
@@ -31,6 +30,9 @@ public class DonateFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.fragment_donate,container,false);
         final EditText cardcheck1 =(EditText) rootView.findViewById(R.id.cardno);
+        final EditText sortcheck1 =(EditText) rootView.findViewById(R.id.sortcode);
+        final EditText cvvcheck1 =(EditText) rootView.findViewById(R.id.cvv);
+        final EditText amountcheck1 =(EditText) rootView.findViewById(R.id.amount);
         Button buy = (Button) rootView.findViewById(R.id.buy);
 
 
@@ -38,17 +40,23 @@ public class DonateFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     String cardcehcker = cardcheck1.getText().toString();
-                    if (TextUtils.isEmpty(cardcehcker)) {
-                        cardcheck1.setError("Please enter number");
-                        {
-                            Intent in = new Intent(getActivity(), Donation_thankyou_activity.class);
-                            startActivity(in);
+                    String sortchecker = sortcheck1.getText().toString();
+                    String cvvchecker = cvvcheck1.getText().toString();
+                    String amountchecker = amountcheck1.getText().toString();
+                    if (cardcehcker.trim().length() == 16)
+                        if (sortchecker.trim().length() == 6)
+                            if (cvvchecker.trim().length() == 3)
+                                if(amountchecker.trim().length()>0){
 
-                        }
-                    }
+                                {
+                                    Intent in = new Intent(getActivity(), Donation_thankyou_activity.class);
+                                    startActivity(in);
+                                }
+
+                            }
+
 
                 }
-
             });
         return rootView;
     }
