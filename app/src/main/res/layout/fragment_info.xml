@@ -179,26 +179,6 @@
             android:text="From 12pm - 7pm"
             android:textColor="@color/common_google_signin_btn_text_dark_focused" />
 
-        <TextView
-            android:id="@+id/timer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/textView33"
-            android:layout_alignParentBottom="true"
-            android:layout_alignRight="@+id/textView33"
-            android:layout_marginBottom="13dp"
-            android:ems="10"
-            android:inputType="text|date" />
-
-        <Button
-            android:id="@+id/btn3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/timer"
-            android:layout_toEndOf="@+id/textView31"
-            android:layout_toRightOf="@+id/textView31"
-            android:text="Button" />
-
     </RelativeLayout>
 
 </RelativeLayout>

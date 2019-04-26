@@ -27,8 +27,8 @@ public class InfoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootview = inflater.inflate(R.layout.fragment_info, container, false);
-        timer= (TextView) rootview.findViewById(R.id.timer);
-        btn3= (Button) rootview.findViewById(R.id.btn3);
+        /*timer= (TextView) rootview.findViewById(R.id.timer);
+        btn3= (Button) rootview.findViewById(R.id.btn3);*/
         return rootview;
     }
 

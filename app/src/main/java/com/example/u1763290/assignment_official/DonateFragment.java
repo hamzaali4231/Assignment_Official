@@ -43,19 +43,15 @@ public class DonateFragment extends Fragment {
                     String sortchecker = sortcheck1.getText().toString();
                     String cvvchecker = cvvcheck1.getText().toString();
                     String amountchecker = amountcheck1.getText().toString();
-                    if (cardcehcker.trim().length() == 16)
-                        if (sortchecker.trim().length() == 6)
-                            if (cvvchecker.trim().length() == 3)
-                                if(amountchecker.trim().length()>0){
-
-                                {
-                                    Intent in = new Intent(getActivity(), Donation_thankyou_activity.class);
-                                    startActivity(in);
-                                }
-
-                            }
-
-
+                    if (cardcehcker.trim().length() == 16 && sortchecker.trim().length() == 6 &&
+                            cvvchecker.trim().length() == 3 && amountchecker.trim().length()>0){
+                                    {
+                                        Intent in = new Intent(getActivity(), Donation_thankyou_activity.class);
+                                        startActivity(in);
+                                    }}
+                    else{
+                        Toast.makeText(getActivity(), "Error", Toast.LENGTH_SHORT).show();
+                    }
                 }
             });
         return rootView;

@@ -34,7 +34,7 @@ public class Football_activity extends AppCompatActivity implements NavigationVi
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new RulesFragment()).commit();
+                    new InfoFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_send);
         }
     }
@@ -42,13 +42,13 @@ public class Football_activity extends AppCompatActivity implements NavigationVi
     @Override
         public boolean onNavigationItemSelected (@NonNull MenuItem item){
             switch (item.getItemId()) {
-                case R.id.nav_rules:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                            new RulesFragment()).commit();
-                    break;
                 case R.id.nav_info:
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             new InfoFragment()).commit();
+                    break;
+                case R.id.nav_rules:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                            new RulesFragment()).commit();
                     break;
                 case R.id.nav_donate:
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
