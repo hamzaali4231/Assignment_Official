@@ -54,7 +54,7 @@ public class InfoFragment extends Fragment {
                     @SuppressLint("SimpleDateFormat") SimpleDateFormat dateFormat = new SimpleDateFormat(
                             "yyyy-MM-dd");
                     // Please here set your event date//YYYY-MM-DD
-                    Date futureDate = dateFormat.parse("2019-5-30");
+                    Date futureDate = dateFormat.parse("2019-7-23");
                     Date currentDate = new Date();
                     if (!currentDate.after(futureDate)) {
                         long diff = futureDate.getTime()
