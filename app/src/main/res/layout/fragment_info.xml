@@ -179,6 +179,61 @@
             android:text="From 12pm - 7pm"
             android:textColor="@color/common_google_signin_btn_text_dark_focused" />
 
+        <TextView
+            android:id="@+id/txtDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView38"
+            android:layout_alignStart="@+id/textView38"
+            android:layout_below="@+id/textView38"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="22dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtDay"
+            android:layout_alignBottom="@+id/txtDay"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/txtDay"
+            android:layout_toRightOf="@+id/txtDay"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtMinute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtHour"
+            android:layout_alignBottom="@+id/txtHour"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/txtHour"
+            android:layout_toRightOf="@+id/txtHour"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtMinute"
+            android:layout_alignBottom="@+id/txtMinute"
+            android:layout_alignEnd="@+id/textView22"
+            android:layout_alignRight="@+id/textView22"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tveventStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtSecond"
+            android:layout_toEndOf="@+id/txtSecond"
+            android:layout_toRightOf="@+id/txtSecond"
+            android:text="TextView" />
+
     </RelativeLayout>
 
 </RelativeLayout>

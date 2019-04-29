@@ -3,6 +3,7 @@ package com.example.u1763290.assignment_official;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -20,35 +21,26 @@ import java.util.concurrent.TimeUnit;
 public class InfoFragment extends Fragment {
     private static final String TAG = "InfoFragment";
 
-    private TextView timer;
-    private Button btn3;
+    private TextView tvEventStart;
+    private TextView txtDay, txtHour, txtMinute, txtSecond;
+    private Handler handler;
+    private Runnable runnable;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootview = inflater.inflate(R.layout.fragment_info, container, false);
-        /*timer= (TextView) rootview.findViewById(R.id.timer);
-        btn3= (Button) rootview.findViewById(R.id.btn3);*/
+
+        /*txtDay = (TextView) findViewById(R.id.txtDay);
+        txtHour = (TextView) findViewById(R.id.txtHour);
+        txtMinute = (TextView) findViewById(R.id.txtMinute);
+        txtSecond = (TextView) findViewById(R.id.txtSecond);
+        tvEventStart = (TextView) findViewById(R.id.tveventStart);*/
         return rootview;
     }
 
-    CountDownTimer countDownTimer = new android.os.CountDownTimer(100,0){
-        @Override
-        public void onTick(long millisUntilFinished) {
-            long millis= millisUntilFinished;
-            @SuppressLint("DefaultLocale") String hms= String.format("%02d:%02d:%02d",
 
-                    TimeUnit.MILLISECONDS.toHours(millis),
-                    TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
-                    TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis))
-            );
-            timer.setText(hms);
-        }
 
-        @Override
-        public void onFinish() {
+    }
 
-        }
-    };
-}
 
